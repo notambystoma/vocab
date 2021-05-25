@@ -1,0 +1,48 @@
+:root {
+    --boxorline: 450px;
+    --size: 450px;
+    --fsize: 45px;
+    --trans: 0.6;
+}
+
+body:after{
+    content:"";
+    position:fixed; top:0;
+    height:100vh; 
+    left:0;
+    right:0;
+    z-index:-1;
+    background-image: url('Lakeside.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.word{
+    float: left;
+    background: rgba(120, 120, 120, var(--trans));
+    color: white;
+    font-family: sans-serif;
+    border-style: solid;
+    border-color: black;
+    width: var(--size);
+    height: var(--boxorline);
+    margin:5px;
+    padding: 10px;
+}
+
+#volume,#trans{
+    width: var(--size);
+}
+
+body{
+    font-size: var(--fsize);
+}
+
+.sliders, button, #searchbar{
+    font-size: var(--fsize);
+    background-color: white;
+    margin-top: 10px;
+    font-family: sans-serif;
+    border: solid;
+}

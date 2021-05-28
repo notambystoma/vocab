@@ -1,5 +1,4 @@
 :root {
-    --boxorline: 450px;
     --size: 450px;
     --fsize: 45px;
     --trans: 0.6;
@@ -26,12 +25,12 @@ body:after{
     border-style: solid;
     border-color: black;
     width: var(--size);
-    height: var(--boxorline);
+    height: 450px;
     margin:5px;
     padding: 10px;
 }
 
-#volume,#trans{
+#zoom,#trans{
     width: var(--size);
 }
 
@@ -45,4 +44,48 @@ body{
     margin-top: 10px;
     font-family: sans-serif;
     border: solid;
+}
+
+#popupmenue{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index:9;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+#menu{
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    width: 80vw;
+    height: 80vh;
+    background-color: white;
+    font-family: sans-serif;
+    border-style: solid;
+    border-color: black;
+    z-index:10;
+}
+
+.filters{
+    float:left;
+    margin:10px;
+    padding:5px;
+    font-size: var(--fsize);
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.filters:hover{
+    background-color: rgb(220, 220, 220);
+}
+
+#filtermode{
+    position: absolute;
+    bottom:2vh;
+    right:2vh;
 }
